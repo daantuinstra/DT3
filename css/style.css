@@ -1,0 +1,501 @@
+/*
+  @author : Daan Tuinstra
+*/
+/* ------------ STANDARD ------------ */
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300);
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font-family: 'Roboto Slab', serif;
+	line-height: 1.5em;
+}
+h1, strong {font-weight:700;}
+p {font-weight:300;}
+em {font-weight:400;}
+header > section > h1,
+header > section > h1 + p {
+	font-size: 1.5em;	
+}
+
+/* ------------ HEADER ------------ */
+body > header{
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 0;
+	background: #ffe066;
+}
+body > header > section:first-child {
+	width: 100%; 
+	display: none;
+}
+body > header > section:first-child p{
+	display: none;
+	width: 100%; 
+	height: 5em;
+	margin: 0;
+	padding: 5em 0;
+	background: url(../images/cmd_beeldbank_verf_01.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body > header > section {
+	width: 50%;
+	margin: 0 auto;
+}
+#search {color: #fff; display: none;}
+body > header > nav ul {margin: 0; padding: 0;}
+body > header > nav ul li {display: inline-block; margin: 0 2%;}
+body > header > section img{
+	max-width: 3em;
+	text-align: center;
+}
+#profile-page {display: none;}
+
+
+/* ------------ NAV ------------ */
+#mini-nav {
+  position: absolute;
+  right: 0;
+  top: 0; 
+}
+#mini-search {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#main-nav {
+	display: none;
+}
+/*#mini-nav a.active  {
+	padding-bottom: 30px;
+}
+#main-nav.inactive {
+	display: none;
+}
+#main-nav.active {
+	display: block;
+	background: #25272a;
+	margin-top: 4px;
+	border-top-left-radius: 4px;
+	padding: 0 0 2px 0;
+}
+#main-nav.active ul {
+	list-style: none;
+	margin: 0;
+	padding: 2px 0;
+}
+#main-nav.active ul li {
+	border-bottom: 1px solid #33383D;
+}
+#main-nav.active ul li a {
+	color: #FFF;
+	padding: 7px 0 7px 20px;
+	display: block;
+}*/
+
+
+
+/* ------------ MAIN ------------ */
+.container {
+	max-width: 70em;
+	margin: 0 auto;
+	overflow: hidden;
+	justify-content: center;
+}
+main {
+	width: 96%;
+	margin: 0 2%;
+}
+main > section {
+	position: relative;
+	border-bottom: 2px solid #ccc;
+	-webkit-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+main > section > h1 {
+	color: #ffd428;
+	font-size: 2em;
+	margin: 2em 0 0;
+}
+main > section > article {
+	max-width: 46em;
+	margin: 0 auto 2em;
+	padding: 2em 0;
+	display: flex;
+	flex-direction: column;
+}
+
+main > section > article h1 {
+	font-size: 1.5em;
+	margin: 0.57em 1em 0 0;
+}
+main > section > article p + h2 {
+	font-size: 1.6em;
+}
+main > section > article > section h1,
+main > section > article > footer h1 {
+	font-size: 1.2em;
+	color: #ffd428;
+}
+main > section img {
+	width: 100%;
+}
+
+main > section video {
+	width: 100%;
+}
+
+section#projects > article > section{
+	margin: 0;
+}
+section#projects > article > section > img{
+	width: 46%;
+	float: left;
+	margin: 0 2% 0 0;
+}
+
+#artikelen, #projects {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 2em 0;
+	background-color: #f5f5f5;
+	border-bottom: 1px solid #ccc;
+}
+#artikelen > h1,
+#projects > h1 {
+	width: 100%;
+	text-align: center;
+	color: #ffd428;
+	font-size: 2em;
+	margin: 2em 0;
+}
+#artikelen footer {order: 2;}
+#artikelen section {order: 1;}
+
+#artikelen article,
+#projects article {
+	width: 98%;
+	margin: 0 1% 2%;
+	padding: 1.5%;
+	background: #fff;
+	-webkit-box-shadow: 0px 2px 7px 0px rgba(146, 139, 144, 0.63);
+	-moz-box-shadow:    0px 2px 7px 0px rgba(146, 139, 144, 0.63);
+	box-shadow:         0px 2px 7px 0px rgba(146, 139, 144, 0.63);
+}
+
+#bg-connected {
+	display: none;
+	width: 100%; 
+	height: 10em;
+	margin: 0;
+	padding: 10em 0 15em;
+	text-align: center;
+	background: url(../images/cmd_beeldbank_connected_01.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#bg-connected p{
+	font-size: 2em;
+	font-weight: 700;
+	color: white;
+}
+/* ------------ FORM ------------- */
+main form {
+	min-height: 50em;
+}
+[for="name"]:after, 
+[for="email"]:after {
+	content: "*";
+	color: red;
+	font-size: 1.2em;
+}
+a[href$='.pdf']::before {
+	content: url(http://www.adobe.com/images/shared/product_mnemonics/50x50/acrobat_reader_50x50.gif);
+	display: inline-block;
+	vertical-align: middle;
+	transform: scale(.5);
+}
+a[data-kb]::after {
+	content: attr(data-kb) "kb";
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: .5em;
+	text-decoration: inherit;
+}
+.invisible {
+	display: none;
+}
+.visible {
+	display: block;
+}
+
+fieldset {
+	border: none;
+	margin-bottom: 2em;
+}
+legend {
+	font-size: 1.8em;
+}
+label {
+	display:block;
+	margin-top:15px;
+	letter-spacing:1px;
+}
+input, textarea, select {
+	background:#efefef;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border:1px solid #dedede;
+	padding:10px;
+	margin-top:3px;
+	font-size:0.9em;
+	color:#3a3a3a;
+}
+fieldset > input[type="text"] {
+	width: 20em;
+}
+fieldset:nth-of-type(2) label{
+	display: inline-block;
+	font-size: 1.2em;
+	margin-right: 0.8em;
+}
+input:focus, textarea:focus {
+	border: 1px solid #97d6eb;
+}
+
+textarea {
+	width: 23.3em;
+	height: 10em;
+	font-family: 'Roboto Slab', serif;
+	background:url(images/textarea-bg.jpg) right no-repeat #efefef;
+}
+
+#submit {
+	padding: 1em 2em;
+	padding: 0.7em 2.5em;
+	background-color: #ffd428;
+	color: #fff;
+	border-radius:5px;
+	border: none;
+	font-size: 1em;
+	position: relative;
+	top: 0;
+	cursor: pointer;
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
+	
+	-webkit-box-shadow: 0px 9px 0px #ffe066;
+    -moz-box-shadow: 0px 9px 0px #ffe066;
+    box-shadow: 0px 9px 0px #ffe066;
+}
+
+/* ------------ ASIDE ------------ */
+aside {display: none; padding-top: 3em; margin-bottom: 3em;}
+aside h1 {
+	font-size: 1.3em;
+}
+aside > section h1 {
+	font-size: 1.0em;
+	margin: 1em 0 0;
+}
+aside p {
+	line-height: 1.5em;
+	font-size: 0.8em;
+}
+
+
+/* ------------ FOOTER ------------ */
+body > footer {
+	padding: 6em 0 4em;
+	clear: both;
+	width: 100%;
+	background-color: #ffeea8;
+}
+body > footer section {
+	width: 80%;
+	float: left;
+	display: none;
+	margin-bottom: 2em;
+}
+body > footer section#about-f {
+	width: 60%;
+	float: left;
+	margin-bottom: 2em;
+}
+body > footer section#credits-f {
+	width: 40%;
+	float: left;
+	margin-bottom: 2em;
+}
+body > footer section#contact-f {
+	width: 25%;
+	float: left;
+}
+body > footer section#sitemap {
+	width: 75%;
+	clear: left;
+}
+body > footer section#sitemap > ul {padding: 0;}
+body > footer section#sitemap > ul > li {
+	width: 25%;
+	float: left;
+	display: inline-block;
+	list-style: none;
+	font-size: 0.9em;
+}
+body > footer section#sitemap > ul > li > ul,
+body > footer section#contact-f > ul {
+	list-style: none;
+	padding: 0;
+	font-size: 0.9em;
+}
+body > footer > .container > h1 {
+	text-align: center;
+	clear: left;
+}
+
+body > footer > .container > h1 a {
+	padding: 0.7em 2.5em;
+	background-color: #ffd428;
+	font-size: 0.7em;
+	text-decoration: none;
+	color: #fff;
+	border-radius:5px;
+	position: relative;
+	top: 0;
+	display: inline-block;
+	margin: 1em;
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
+	
+	-webkit-box-shadow: 0px 9px 0px #ffe066;
+    -moz-box-shadow: 0px 9px 0px #ffe066;
+    box-shadow: 0px 9px 0px #ffe066;
+}
+body > footer > .container > h1 a:hover,
+#submit:hover {
+	-webkit-box-shadow: 0px 6px 0px #ffe066;
+    -moz-box-shadow: 0px 6px 0px #ffe066;
+    box-shadow: 0px 6px 0px #ffe066;
+	position: relative;
+	top: 5px;
+}
+
+body > footer > .container > h1 a:active,
+#submit:hover {
+    -webkit-box-shadow: 0px 2px 0px #ffe066;
+    -moz-box-shadow: 0px 2px 0px #ffe066;
+    box-shadow: 0px 2px 0px #ffe066;
+    position: relative;
+    top: 10px;
+}
+
+
+
+/* ------------ Media Queries ------------ */
+@media all and (min-width: 31em) {
+	header > section > h1, header > section > h1 + p {font-size: 2em;}
+	body > header{
+		top: 0;
+		left: 0;
+		display: flex;
+		width: 100%;
+		padding: 0;
+		background: #ffe066;
+		flex-wrap: wrap;
+		align-items: center;
+		-webkit-box-shadow: 0px 3px 10px 0px rgba(50, 50, 50, 0.4);
+		-moz-box-shadow:    0px 3px 10px 0px rgba(50, 50, 50, 0.4);
+		box-shadow:         0px 3px 10px 0px rgba(50, 50, 50, 0.4);
+	}
+	body > header > section > h1 {
+		margin: 0;
+		padding: 0.5em 0;
+		text-shadow: 0px 3px 3px rgba(150, 150, 150, 0.7); 
+		background-color:#ffe088;
+	}
+	body > header > section:first-child {width: 100%; display: block; text-align: center;}
+	body > header > section:first-child p, #bg-connected {display: block;}
+	body > header > section img {max-width: 3em;}
+}
+
+@media all and (min-width: 48em) {
+	#mini-nav {display: none;}
+	#main-nav, body > header > section:first-child p {display: inline-block;}
+	body > header > section {width: 15%;}
+	body > header > nav {width: 50%;}
+	body > header > form {width: 15%; display: block;}
+	body > header > nav ul {margin: 0; padding: 0;}
+	body > header > nav ul li {display: inline-block; margin: 0 2%;}
+	#profile-page {display: inline-block;}
+	#profile-page img {
+		vertical-align: middle;
+	}
+	body > footer section {display: block;}
+	#artikelen article,
+	#projects article {
+		width: 48%;
+		margin: 0 1% 2%;
+	}
+}
+
+@media all and (min-width: 61em) {
+	aside {
+		display: block;
+		float: left;
+		width: 28%;
+		margin: 0 0 3em 2%;
+	}
+	main {
+		width: 68%;
+		margin:  0 2% 3em 0;
+		float: left;
+	}
+
+	#artikelen article,
+	#projects article {
+		width: 29.3333%;
+		margin: 0 2% 2%;
+	}
+}
+
+@media all and (min-width: 80em) {
+	main > section > article {
+		margin: 0;
+	}
+
+	#artikelen article{
+		width: 24%;
+		margin: 0 0.5% 2%;
+	}
+
+	#projects article {
+		width: 32.3%;
+		margin: 0 0.5% 2%;
+	}
+	#mini-search {display: none;}
+	#search {display: inline-block;}
+}
+
+
